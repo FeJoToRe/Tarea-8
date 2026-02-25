@@ -1,6 +1,11 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: "header" "main" "content" 
+                        "footer";
 }
 
 a {
@@ -30,9 +35,32 @@ ul {
     padding-right: 600px;
 }
 
-#titulo{
+#titulo {
     color: white;
     font-size: 47px;
     margin: 0;
     padding-left: 300px;
+}
+
+footer {
+    align-content: end;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    grid-row: end;
+}
+
+#semi-footer {
+    display: grid;
+    background-color: rgb(33, 63, 102);
+    height: 80px;
+    align-items: center;
+    grid-area: content;
+    
+}
+
+#lista-pie-pagina a {
+    font-size: 20px;
 }
