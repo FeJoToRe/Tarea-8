@@ -1,11 +1,14 @@
-﻿body {
+﻿* {
+    box-sizing:border-box
+}
+
+body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: auto 2fr auto;
-    grid-template-areas: "header" "main" "content" 
-                        "footer";
+    grid-template-rows: auto 100% auto auto;
+    grid-template-areas: "header" "main" "content" "footer";
 }
 
 a {
@@ -55,12 +58,22 @@ footer {
 #semi-footer {
     display: grid;
     background-color: rgb(33, 63, 102);
-    height: 80px;
-    align-items: center;
     grid-area: content;
+    justify-content: center;
+    padding-left:25%;
+    height: 18cap;
+    align-content: end;
     
+}
+
+#semi-footer ul {
+
+    display: flex;
+    justify-items: center;
+
 }
 
 #lista-pie-pagina a {
     font-size: 20px;
+    padding-bottom: 8%;
 }
