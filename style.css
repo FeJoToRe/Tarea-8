@@ -1,5 +1,5 @@
 ﻿* {
-    box-sizing:border-box
+    box-sizing: border-box
 }
 
 body {
@@ -45,6 +45,10 @@ ul {
     padding-left: 300px;
 }
 
+#titulo i {
+    margin-right: 8px;
+}
+
 footer {
     align-content: end;
     background-color: black;
@@ -60,10 +64,10 @@ footer {
     background-color: rgb(33, 63, 102);
     grid-area: content;
     justify-content: center;
-    padding-left:25%;
+    padding-left: 25%;
     height: 18cap;
     align-content: end;
-    
+
 }
 
 #semi-footer ul {
@@ -76,4 +80,37 @@ footer {
 #lista-pie-pagina a {
     font-size: 20px;
     padding-bottom: 8%;
+}
+
+.contenedor-negro ul a i {
+    margin-right: 5px;
+}
+
+.iconos-redes {
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    margin-left: 10%;
+    margin-bottom: 3%;
+
+}
+
+.iconos-redes i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5dc;
+    border-radius: 50%;
+    font-size: 28px;
+    color: black;
+}
+
+.multimedia-items {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+
 }
